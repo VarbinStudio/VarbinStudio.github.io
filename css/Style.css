@@ -15,12 +15,14 @@ header{
 }
 .FullScreen{
 	width:100%;
+	filter:grayscale(20%);
 }
 .BackgroundSettings{
 	background-image: url();
 	background-position: center;
 	background-repeat: no-repeat; 
-	background-size: cover; 
+	background-size: cover;
+	background-origin: center; 
 	box-shadow: 0 0 20px 
 	rgba(0,0,0,0.7);
 }
@@ -43,10 +45,23 @@ header{
 	height:50px;
 }
 .Block_1{
+
 	margin-top: 50px;
 	width: 100%;
 	height:700px;
 	
+}
+
+.Block_2{
+	float: left;
+	margin-top:80px;
+	margin-left:80px;
+	border-top: 1px solid #EEEEEE;
+	border-bottom: 1px solid #EEEEEE;
+	height: 425px;
+	width: 550px;
+	background-color: rgba(0,0,0,0.1);
+
 }
 .Image{
 	position: relative;
@@ -65,13 +80,48 @@ header{
 	color: #F3F3F3;
 	text-align: center;
 }
+.DiscriptionTitle{
+	margin-top: 20px;
+	font-size:3em;
+	color: #F3F3F3;
+	text-align: center;
+}
+#HeaderText{
+	margin-top: 20px;
+	font-size:3em;
+	color: #F3F3F3;
+	text-align: center;
+	display: block;
+}
+#HeaderText::before{
+	display:block;
+	content: "";
+	width: 100px;
+	height: 1px;
+	background-color: #E5E5E5;
+	position: relative;
+	float: left;
+	top:30px;
+	left:310px;
+	
+}
+#HeaderText::after{
+	display:block;
+	content: "";
+	width: 100px;
+	height: 1px;
+	background-color: #E5E5E5;
+	position: relative;
+	top:30px;
+	float:right;
+	right: 310px;
+}
 
 a{
 
 	padding:0 10px;
 	border: 1px solid  #F1F1F1;
 	color: #FFFFFF;
-	padding:0 auto;
 	text-decoration: none;
 	font-size: 2em;
 	border-radius:15px;
@@ -82,7 +132,8 @@ a:hover{
 	border-radius:19px;
 	transition: 0.4s ease;
 	background-color:#FAFAFA;
-	color:#515151;
+	/*color:#515151;*/
+	color:rgba(0,0,0,1);
 }
 ul{
 	position: relative;
@@ -108,11 +159,12 @@ li{
 }
 #TopMenuButton:hover{
 	direction: none;
-	color: #353535;
+	/*color: #353535;*/
 	border: 0 solid #565656;
 	border-radius: 10px;
 	font-size: 1em;
 	transition: 0.6s ease;
+	color:rgba(0,0,0,1);
 }
 .line{
 	margin: 10px auto;
@@ -128,6 +180,25 @@ li{
 	color:#E5E5E5;
 	width: 500px;
 	margin-bottom: 100px;
+}
+
+.SocialBox{
+	margin:25px;
+	float: left;
+	width: 250px;
+	height: 250px;
+	border-radius: 30px;
+	border-top: 2px solid #FFFFFF;
+	border-bottom: 2px solid #FFFFFF;
+	background-color: rgba(0,0,0,0.1);
+	transition: 0.2s ease;
+}
+.SocialBox:hover{
+transition: 0.2s ease;
+background-color: rgba(0,0,0,0.4);
+}
+.SocialIcon{
+	font-size: 5em;
 }
 
 @media(max-width:1200px){

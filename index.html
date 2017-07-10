@@ -5,6 +5,7 @@
 	<link type="text/css" rel="stylesheet" href="css/Style.css">
 	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script src="https://use.fontawesome.com/b5870ab10f.js"></script>
 	<script>
 		$(window).scroll(function(){
 
@@ -13,7 +14,7 @@
 
 			if(st > -200){
 			$(".Block_1").css({
-				"transform" : "translate(0%, -"+ st/35 +"%"
+				"transform" : "translate(0%, -"+ st/35 +"%)"
 			});
 		}
 		});
@@ -41,16 +42,39 @@
 </div>
 </div>
 </header>
-<section class="Content BackgroundSettings" style="height: 500px; margin-top: 20px; margin-bottom: 20px;">
-<div class="Content"  style="height: 500px; margin-top: 20px;">
-	<h1 class="CenterText" style="text-align: center; color: #454545; font-size: 2em;">#News</h1>
-	<div class="line" style="background-color: #3C3C3C;"></div>
-	<img class="Image" src="https://inspirationfeeeed.files.wordpress.com/2015/01/spaceship-by-dani-does-art.jpg">
-</div> 
-<div class="Content"  style="height: 500px; margin-top: 20px;">
+<section class="FullScreen BackgroundSettings" id="GameNews" style="height: 800px; margin-top: 50px; margin-bottom: 20px; background-image: url(https://pro2-bar-s3-cdn-cf6.myportfolio.com/dcc4b887f8bfed816375990ce76319cb/7c5c5ba9c477e780ab578cc2_rw_1920.png?h=53d1c036ad1cdecb414f63f13bb4e474);">
+<div class="Content"  style="position: relative; top: 50px; height: 500px;">
+	<h3 id="HeaderText">GameNews</h3>
+		<img class="Image" src="https://pp.userapi.com/c639420/v639420189/2b8f8/OBJigunUCRQ.jpg" style=" margin:60px;border: 2px solid #FFFFFF; padding: 10px;background-color: rgba(0,0,0,0.3); float: left;">
+		<div class="Block_2">
+			<center>
+			<h1 class="DiscriptionTitle">Update</h1>
+			</center>
+			<pre class="SubText" style="text-align: left;">
+	Список нововведений:
+	- Новые карты
+	- Новые персонажи
+	- Исправлены баги
+	- Улутшена производительность
+	  </pre>
+			<center>
+			<a href="" style="margin-top:0px;"><b>Play</b>Store</a>
+			</center>
+		</div>
+
 </div>
 </section>
-<section class="Content" style="height: 500px;"> 
+
+<section class="FullScreen BackgroundSettings" id="GameNews" style="height: 600px; margin-top: 50px; margin-bottom: 20px; background-image: url(https://i.redd.it/q0j1kw4eyk7z.png);">
+<div class="Content"  style="position: relative; top: 50px; height: 500px;">
+	<h3 id="HeaderText">Socials</h3>
+	<center>
+	<div class="SocialBox"><i class="fa fa-instagram SocialIcon" aria-hidden="true" style="font-size: 15em; color: #FFFFFF; margin-top: 7px"></i></div>
+	<div class="SocialBox"><i class="fa fa-vk" aria-hidden="true" style="font-size: 10em; color: #FFFFFF; margin-top: 35px"></i></div>
+	<div class="SocialBox"><i class="fa fa-twitter" aria-hidden="true" style="font-size: 10em; color: #FFFFFF; margin-top: 35px"></i></div>
+	<div class="SocialBox"><i class="fa fa-share-alt" aria-hidden="true" style="font-size: 10em; color: #FFFFFF; margin-top: 35px"></i></div>
+	</center>
+</div>
 </section>
 </body>
 </html>
